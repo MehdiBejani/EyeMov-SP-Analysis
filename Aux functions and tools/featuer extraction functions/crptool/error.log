@@ -1,0 +1,71 @@
+Please send us the following error report. Provide a brief
+description of what you were doing when this problem occurred.
+E-mail or FAX this information to us at:
+    E-mail:  marwan@pik-potsdam.de
+       Fax:  ++49 +331 288 2508
+Thank you for your assistance.
+
+
+--------------------------------------------------
+02-Mar-2020 20:02:29
+Matlab 9.6.0.1114505 (R2019a) Update 2 on GLNXA64
+Cross Recurrence Plot Toolbox 5.22 (12-Jun-2019)
+--------------------------------------------------
+Error using jrqa (line 1044)
+Undefined function or variable 'h1'.
+MATLAB has disabled some advanced graphics rendering features by switching to software OpenGL. For more information, click <a href="matlab:opengl('problems')">here</a>.
+ during ==> jrqa:compute
+ method ==> Maximum Norm
+ input ==> char	 (compute)
+ errorcode ==> 111.004
+ workspace dump ==>
+Name	Size	Bytes	Class
+Nx	1  1	8	double
+Ny	1  1	8	double
+X	100  100	80000	double
+Xx	100  100	10000	uint8
+Xy	100  100	10000	uint8
+Y	400   13	41600	double
+action	1  7	14	char
+check_gui	1  3	354	cell
+check_meth	1  10	1160	cell
+check_norm	1  2	236	cell
+do_norm	2  1	236	cell
+e	1  1	8	double
+errcode	1  1	8	double
+h	1  1	8	matlab.ui.control.UIControl
+h_button_apply	1  1	8	matlab.ui.control.UIControl
+h_crqa_axes_Data	1  1	8	matlab.graphics.axis.Axes
+h_fig	1  1	8	matlab.ui.Figure
+hw	1  1	0	matlab.ui.Figure
+i	1  1	8	double
+i_char	1  1	8	double
+i_double	1  13	104	double
+j	1  1	8	double
+lmin	1  1	8	double
+m	1  1	8	double
+method	1  12	24	char
+method_n	1  1	8	double
+nogui	1  1	8	double
+nonorm	1  1	8	double
+obj	13   1	1724	cell
+plugin_exist	1  1	8	double
+plugin_name	0  0	0	char
+plugin_path	0  0	0	char
+props	1  1	36904	struct
+t	1  1	8	double
+temp	2  2	32	double
+theiler_window	1  1	8	double
+time_scale_flag	1  1	8	double
+time_scale_flag_x	1  1	8	double
+varargin	1  14	334	cell
+vmin	1  1	8	double
+w	1  1	8	double
+wstep	1  1	8	double
+x	500    1	4000	double
+x_var	1  1	8	double
+xscale	500    1	4000	double
+xy_var	1  1	8	double
+y	500    1	4000	double
+y_var	1  1	8	double
+yscale	500    1	4000	double
