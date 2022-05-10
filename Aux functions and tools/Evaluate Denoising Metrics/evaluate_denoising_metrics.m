@@ -1,4 +1,4 @@
-function [] = evaluate_denoising_metrics(clean,denoised)
+function [mse, mae, SNR, PSNR, cross_core] = evaluate_denoising_metrics(clean,denoised)
 
 %Computes metrics of denoising (1-D)signal algorithms
 
@@ -19,7 +19,7 @@ for i=1:length(temp)
 mse=mse+(y(i)-temp(i))^2;
 end
 mse=mse/length(temp);
-fprintf('mean squared error %f\n',mse);
+% fprintf('mean squared error %f\n',mse);
 
 %MAE %Mean absolute error
 mae=0;
@@ -27,7 +27,7 @@ for i=1:length(temp)
 mae=mae+abs(y(i)-temp(i));
 end
 mae=mae/length(temp);
-fprintf('mean absolute error %f\n',mae);
+% fprintf('mean absolute error %f\n',mae);
 
 
 %SNR and PSNR %signal to noise ratio %peak signal to noise ratio
@@ -41,13 +41,13 @@ num=num+temp(i)^2;
 end
 SNR = 20*log10(sqrt(num)/sqrt(den));
 PSNR= 20*log10(max(temp)/sqrt(mse));
-fprintf('signal to noise ratio %f db\n',SNR);
-fprintf('peak signal to noise ratio %f db\n',PSNR);
+% fprintf('signal to noise ratio %f db\n',SNR);
+% fprintf('peak signal to noise ratio %f db\n',PSNR);
 
 
 %Cross correlation 
 cc = corrcoef(y,temp);
 cross_core = cc(1,2);
-fprintf('cross correlation %f\n',cross_core);
+% fprintf('cross correlation %f\n',cross_core);
 
 end
